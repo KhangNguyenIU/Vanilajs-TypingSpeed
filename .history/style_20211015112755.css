@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #1E0555;
+  }
+  
+  body, .quote-input {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .container {
+    background-color: #F0DB4F;
+    padding: 1rem;
+    border-radius: .5rem;
+    width: 700px;
+    max-width: 90%;
+  }
+
+  #overlay {
+    position: fixed;
+    opacity: 1;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5  );
+    pointer-events: none;
+  }
+  
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border-radius: 5px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal.active{
+    transform: scale(1);
+  }
+  .modal-body{
+    
+  }
+  .timer {
+    position: absolute;
+    top: 2rem;
+    font-size: 3rem;
+    color: #F0DB4F;
+    font-weight: bold;
+  }
+
+  .word-speed {
+    position: absolute;
+    top: 2rem;
+    left:50rem;
+    font-size: 3rem;
+    color: #F0DB4F;
+    font-weight: bold;
+  }
+  
+  .quote-display {
+    margin-bottom: 1rem;
+    margin-left: calc(1rem + 2px);
+    margin-right: calc(1rem + 2px);
+    font-size: 26px;
+    letter-spacing: 1.5px;
+    line-height: 40px;
+    color: rgba(0,0,0,.5);
+  }
+  
+  .current-char{
+    color:black;
+    text-decoration: underline;
+
+  }
+
+  .quote-input {
+    background-color: transparent;
+    border: 2px solid #A1922E;
+    outline: none;
+    width: 100%;
+    height: 8rem;
+    margin: auto;
+    resize: none;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border-radius: .5rem;
+  }
+  
+  .quote-input:focus {
+    border-color: black;
+  }
+  
+  .correct {
+    color: green;
+  }
+  
+  .incorrect {
+    color: red;
+  }

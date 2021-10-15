@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+    <title>Typing Game</title>
+  </head>
+  <body>
+    <body>
+      <div class="container">
+        <div class="timer">
+          <span>Time: </span>
+          <span id="timer">0</span>
+        </div>
+        <div class="word-speed">
+          <span> WPS: </span>
+          <span id="word-speed"> 0.0 </span>
+        </div>
+        <div class="quote-display" id="quoteDisplay"></div>
+      </div>
+
+      <div class="modal" id="modal">
+        <div class="modal-body">
+          <i class="fas fa-times " id="close-icon"></i>
+          <p class="text-primary">Congratulation</p>
+          <p class="text-secondary">Accuracy :<span id="accuracy"></span> %</p>
+          <p class="text-secondary">Word per seconds: <span id="wps"></span></p>
+        </div>
+      </div>
+      <div id="overlay"></div>
+    </body>
+  </body>
+</html>
